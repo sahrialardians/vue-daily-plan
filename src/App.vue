@@ -21,18 +21,22 @@ export default {
         {
           id: 1,
           nameTask: 'Washing clothes'
+          status: false
         },
         {
           id: 2,
           nameTask: 'Learning online course'
+          status: false
         },
         {
           id: 3,
           nameTask: 'Repairing motorcycle'
+          status: false
         },
         {
           id: 4,
           nameTask: 'Creating study case'
+          status: false
         },
       ]
     };
