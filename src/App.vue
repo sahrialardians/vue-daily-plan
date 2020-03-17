@@ -11,7 +11,7 @@
           <div class="home-work">
             <div class="row">  
               <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="mb-3 tasks col-lg-12 text-left">
-                <ItemTask></ItemTask>
+                <ItemTask v-bind:taskMe="taskMe"></ItemTask>
               </div>
             </div>
           </div>
