@@ -23,6 +23,7 @@
 
 <script>
 import 'bootstrap/dist/css/bootstrap.css'
+import ItemTask from './components/ItemTask.vue';
 
 export default {
   name: 'App',
@@ -53,7 +54,7 @@ export default {
     };
   },
   components: {
-    
+    ItemTask
   }
 }
 </script>
