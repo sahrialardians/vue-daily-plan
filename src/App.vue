@@ -11,12 +11,7 @@
           <div class="home-work">
             <div class="row">  
               <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="mb-3 tasks col-lg-12 text-left">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label item" v-bind:class="{'item-done':taskMe.status}" for="defaultCheck1">
-                    {{ taskMe.nameTask }}
-                  </label>
-                </div>
+                <ItemTask></ItemTask>
               </div>
             </div>
           </div>
