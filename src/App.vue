@@ -10,7 +10,12 @@
         <div class="col-lg-12">
           <div class="home-work">
             <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="tasks">
-              <p>{{ taskMe.nameTask }}</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  {{ taskMe.nameTask }}
+                </label>
+              </div>
             </div>
           </div>
         </div>
