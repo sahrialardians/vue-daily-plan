@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <h2>What I do Today?</h2>
-    <div class="home-work">
-
-      <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="tasks">
-        <p>{{ taskMe.nameTask }}</p>
+    <div class="container">
+      <div class="row header">
+        <h2 class="col-lg-12">What I do Today?</h2>
       </div>
+    </div>
 
+    <div class="container">
+      <div class="row content">
+        <div class="col-lg-12">
+          <div class="home-work">
+            <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="tasks">
+              <p>{{ taskMe.nameTask }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
