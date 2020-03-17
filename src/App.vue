@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <div class="container">
-      <div class="row header">
-        <h2 class="col-lg-12">What I do Today?</h2>
+      <div class="row header mb-5 p-3">
+        <div class="col-lg-12">
+          <h2>What I do Today?</h2>
+        </div>
       </div>
-    </div>
-
-    <div class="container">
       <div class="row content">
         <div class="col-lg-12">
           <div class="home-work">
@@ -21,6 +20,7 @@
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default {
   name: 'App',
@@ -64,5 +64,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.header{
+  background: #3057da;
+  color: #ffffff;
+}
+
+.header h2{
+  margin: 0;
 }
 </style>
