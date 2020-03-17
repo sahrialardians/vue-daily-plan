@@ -9,12 +9,14 @@
       <div class="row content">
         <div class="col-lg-12">
           <div class="home-work">
-            <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="tasks">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  {{ taskMe.nameTask }}
-                </label>
+            <div class="row">  
+              <div v-for="taskMe in tasks" v-bind:key="taskMe.id" class="mb-3 tasks col-lg-12 text-left">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label item" v-bind:class="{'item-done':taskMe.status}" for="defaultCheck1">
+                    {{ taskMe.nameTask }}
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -63,7 +65,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -78,5 +80,13 @@ export default {
 
 .header h2{
   margin: 0;
+}
+
+.tasks .item{
+  font-size: 20px;
+}
+
+.item-done{
+  color: #b8b8b8;
 }
 </style>
